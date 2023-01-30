@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Effects/Particles/Oneshot Particles.gd" type="Script" id=1]
+
+[node name="Oneshot Particles" type="CPUParticles2D"]
+emitting = false
+one_shot = true
+script = ExtResource( 1 )

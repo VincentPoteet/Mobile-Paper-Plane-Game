@@ -1,6 +1,6 @@
 extends Node2D
 
-export var max_speed = 100
+export var max_speed = 80
 export var acceleration = 150
 export var deceleration = 150
 export (String, "Input", "Player", "Forwards") var target

@@ -18,6 +18,8 @@ config/icon="res://icon.png"
 
 TouchInput="*res://Autoloads/touch input.gd"
 Signalbus="*res://Autoloads/Signalbus.gd"
+Screenshake="*res://Autoloads/screenshake.gd"
+Timefreeze="*res://Autoloads/Timefreeze.gd"
 
 [debug]
 

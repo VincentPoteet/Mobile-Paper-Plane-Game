@@ -1,8 +1,8 @@
 extends Node2D
 
-export var max_steer_speed = 3
-export var steer_acceleration = 13
-export var steer_deceleration = 10
+export var max_steer_speed = 3.1
+export var steer_acceleration = 14
+export var steer_deceleration = 11
 
 var steer_speed = 0
 var steer_direction = 0
