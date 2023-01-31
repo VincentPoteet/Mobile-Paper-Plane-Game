@@ -1,6 +1,6 @@
 extends Area2D
 
-var player
+onready var player
 var follow_speed = 100
 var following_player = false
 var follow_trigger_distance = 30
@@ -32,10 +32,11 @@ func _on_Coin_body_entered(body: Node) -> void:
 
 
 func trigger_following_player():
-	if position.distance_to(player.position) <= follow_trigger_distance:
-		following_player = true
-	else:
-		following_player = false
+	if player:
+		if position.distance_to(player.position) <= follow_trigger_distance:
+			following_player = true
+		else:
+			following_player = false
 
 func follow_player(delta):
 	if following_player:
