@@ -22,8 +22,7 @@ func _on_Coin_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
 		$Sprite.modulate = Color(100,100,100)
 		$Sprite.scale = Vector2(1.2, 1.2)
-		$AudioStreamPlayer2D.pitch_scale = rand_range(0.9, 1.1)
-		$AudioStreamPlayer2D.play()
+		play_sound()
 		spawn_particles()
 		screenshake()
 		Timefreeze.time_freeze(time_freeze_scale, time_freeze_length)
@@ -48,6 +47,12 @@ func spawn_particles():
 	inst.emitting = true
 	get_tree().current_scene.add_child(inst)
 
+
+func play_sound():
+	var inst = $"Oneshot Audio 2D".duplicate()
+	inst.pitch_scale = rand_range(0.9, 1.1)
+	inst.play()
+	get_tree().current_scene.add_child(inst)
 
 func screenshake():
 	Screenshake.strength = max(Screenshake.strength, shake_strength)

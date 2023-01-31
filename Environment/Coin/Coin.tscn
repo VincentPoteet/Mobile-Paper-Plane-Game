@@ -4,7 +4,7 @@
 [ext_resource path="res://Environment/Coin/Coin.gd" type="Script" id=2]
 [ext_resource path="res://Environment/Coin/Sprite.gd" type="Script" id=3]
 [ext_resource path="res://Environment/Coin/coin shadow.png" type="Texture" id=4]
-[ext_resource path="res://SFX/Heal Sound.wav" type="AudioStream" id=5]
+[ext_resource path="res://Audio/Oneshot Audio 2D.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 6.08276
@@ -25,7 +25,6 @@ texture = ExtResource( 4 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 5 )
+[node name="Oneshot Audio 2D" parent="." instance=ExtResource( 5 )]
 
 [connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]

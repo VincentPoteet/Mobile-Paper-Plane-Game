@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://SFX/Heal Sound.wav" type="AudioStream" id=1]
+[ext_resource path="res://Audio/Oneshot Audio 2D.gd" type="Script" id=2]
+
+[node name="Oneshot Audio 2D" type="AudioStreamPlayer2D"]
+stream = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[connection signal="finished" from="." to="." method="_on_Oneshot_Audio_2D_finished"]

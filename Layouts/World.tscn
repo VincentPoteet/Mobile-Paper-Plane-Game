@@ -700,9 +700,8 @@ position = Vector2( 384, 528 )
 [node name="Saws" type="Node2D" parent="Hazards"]
 
 [node name="Saw4" parent="Hazards/Saws" instance=ExtResource( 5 )]
-position = Vector2( -32, -208 )
-speed = 50
-initial_angle = 180
+position = Vector2( 16, 208 )
+speed = 0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -288, 304 )
