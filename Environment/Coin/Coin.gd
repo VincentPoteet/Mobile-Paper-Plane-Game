@@ -33,18 +33,18 @@ func _on_Coin_body_entered(body: Node) -> void:
 
 func trigger_following_player():
 	if player:
-		if position.distance_to(player.position) <= follow_trigger_distance:
+		if global_position.distance_to(player.position) <= follow_trigger_distance:
 			following_player = true
 		else:
 			following_player = false
 
 func follow_player(delta):
 	if following_player:
-		position = position.move_toward(player.position, follow_speed * delta)
+		global_position = global_position.move_toward(player.position, follow_speed * delta)
 
 func spawn_particles():
 	var inst = death_particles.instance()
-	inst.global_position = position
+	inst.global_position = global_position
 	inst.emitting = true
 	get_tree().current_scene.add_child(inst)
 
