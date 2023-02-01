@@ -26,7 +26,7 @@ shape = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="Shadow" type="Sprite" parent="."]
-modulate = Color( 0.133333, 0.12549, 0.203922, 1 )
+modulate = Color( 0.113725, 0.168627, 0.32549, 1 )
 position = Vector2( 0, 5 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )

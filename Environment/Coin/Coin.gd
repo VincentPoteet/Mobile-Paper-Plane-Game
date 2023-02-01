@@ -5,15 +5,17 @@ var follow_speed = 100
 var following_player = false
 var follow_trigger_distance = 30
 var death_particles = preload("res://Environment/Coin/Coin Particles.tscn")
+var sound = preload("res://SFX/Heal Sound.wav")
 var shake_strength = 2
 var time_freeze_length = 0.05
 var time_freeze_scale = 0.7
+
 
 func _ready() -> void:
 	Signalbus.connect("send_player_node", self, "_receive_player_node")
 
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	trigger_following_player()
 	follow_player(delta)
 
@@ -50,8 +52,10 @@ func spawn_particles():
 
 
 func play_sound():
-	var inst = $"Oneshot Audio 2D".duplicate()
+	var audio = load("res://Audio/Oneshot Audio 2D.tscn")
+	var inst = audio.instance()
 	inst.pitch_scale = rand_range(0.9, 1.1)
+	inst.stream = sound
 	inst.play()
 	get_tree().current_scene.add_child(inst)
 

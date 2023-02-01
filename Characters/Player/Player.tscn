@@ -24,7 +24,7 @@ height = 2.0
 script = ExtResource( 5 )
 
 [node name="Shadow" type="Sprite" parent="."]
-modulate = Color( 0.133333, 0.12549, 0.203922, 1 )
+modulate = Color( 0.113725, 0.168627, 0.32549, 1 )
 material = SubResource( 1 )
 texture = ExtResource( 2 )
 script = ExtResource( 4 )

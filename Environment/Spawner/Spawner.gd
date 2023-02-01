@@ -1,7 +1,7 @@
 extends Position2D
 
 export var can_spawn = true
-export var distance_from_player = 300
+export var distance_from_player = 160
 export var object = preload("res://Environment/Coin/Coin.tscn")
 
 var player
