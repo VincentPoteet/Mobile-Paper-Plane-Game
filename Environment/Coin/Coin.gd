@@ -25,6 +25,7 @@ func _on_Coin_body_entered(body: Node) -> void:
 		play_sound()
 		spawn_particles()
 		screenshake()
+		stop_spawning()
 		Timefreeze.time_freeze(time_freeze_scale, time_freeze_length)
 		yield(get_tree().create_timer(0.1, false), "timeout")
 		queue_free()
@@ -56,6 +57,11 @@ func play_sound():
 
 func screenshake():
 	Screenshake.strength = max(Screenshake.strength, shake_strength)
+
+
+func stop_spawning():
+	if get_parent().is_in_group("spawner"):
+		get_parent().can_spawn = false
 
 func _receive_player_node(node):
 	player = node

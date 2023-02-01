@@ -3,7 +3,7 @@
 [ext_resource path="res://Characters/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://UI/Steer Button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Environment/Background/Background Tilemap.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Environment/Coin/Coin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Environment/Spawner/Spawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Environment/Saw/Saw.tscn" type="PackedScene" id=5]
 
 [node name="World" type="Node2D"]
@@ -23,677 +23,1895 @@ action = "steer_right"
 
 [node name="Coins" type="Node2D" parent="."]
 
-[node name="Coin9" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 96 )
+[node name="Spawner" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 522 )
 
-[node name="Coin10" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 80 )
+[node name="Spawner2" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 522 )
 
-[node name="Coin11" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 64 )
+[node name="Spawner3" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 522 )
 
-[node name="Coin39" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 144 )
+[node name="Spawner4" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 522 )
 
-[node name="Coin40" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 128 )
+[node name="Spawner5" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 522 )
 
-[node name="Coin41" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 112 )
+[node name="Spawner6" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 522 )
 
-[node name="Coin42" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 144 )
+[node name="Spawner8" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 522 )
 
-[node name="Coin43" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 176 )
+[node name="Spawner9" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 522 )
 
-[node name="Coin55" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -288, 144 )
+[node name="Spawner10" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 522 )
 
-[node name="Coin56" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -304, 144 )
+[node name="Spawner7" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 522 )
 
-[node name="Coin157" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -320, 144 )
+[node name="Spawner11" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 506 )
 
-[node name="Coin158" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -368, 176 )
+[node name="Spawner12" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 506 )
 
-[node name="Coin159" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -384, 192 )
+[node name="Spawner13" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 506 )
 
-[node name="Coin160" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -400, 208 )
+[node name="Spawner14" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 506 )
 
-[node name="Coin231" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 224 )
+[node name="Spawner15" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 506 )
 
-[node name="Coin232" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 240 )
+[node name="Spawner16" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 506 )
 
-[node name="Coin161" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 256 )
+[node name="Spawner17" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 506 )
 
-[node name="Coin162" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 272 )
+[node name="Spawner18" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 506 )
 
-[node name="Coin163" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 288 )
+[node name="Spawner19" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 506 )
 
-[node name="Coin164" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 304 )
+[node name="Spawner20" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 506 )
 
-[node name="Coin165" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 320 )
+[node name="Spawner21" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 490 )
 
-[node name="Coin166" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -416, 336 )
+[node name="Spawner22" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 490 )
 
-[node name="Coin167" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -400, 352 )
+[node name="Spawner23" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 490 )
 
-[node name="Coin168" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -384, 368 )
+[node name="Spawner24" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 490 )
 
-[node name="Coin169" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -368, 384 )
+[node name="Spawner25" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 490 )
 
-[node name="Coin170" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -336, 416 )
+[node name="Spawner26" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 490 )
 
-[node name="Coin171" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -320, 416 )
+[node name="Spawner27" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 490 )
 
-[node name="Coin172" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -304, 416 )
+[node name="Spawner28" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 490 )
 
-[node name="Coin173" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -288, 416 )
+[node name="Spawner29" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 490 )
 
-[node name="Coin174" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -272, 416 )
+[node name="Spawner30" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 490 )
 
-[node name="Coin175" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -256, 416 )
+[node name="Spawner31" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 474 )
 
-[node name="Coin176" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -240, 416 )
+[node name="Spawner32" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 474 )
 
-[node name="Coin177" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -224, 400 )
+[node name="Spawner33" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 474 )
 
-[node name="Coin178" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -208, 384 )
+[node name="Spawner34" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 474 )
 
-[node name="Coin179" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -192, 368 )
+[node name="Spawner35" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 474 )
 
-[node name="Coin219" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -176, 352 )
+[node name="Spawner36" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 474 )
 
-[node name="Coin225" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 336 )
+[node name="Spawner37" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 474 )
 
-[node name="Coin180" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 320 )
+[node name="Spawner38" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 474 )
 
-[node name="Coin181" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 304 )
+[node name="Spawner39" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 474 )
 
-[node name="Coin182" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 288 )
+[node name="Spawner40" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 474 )
 
-[node name="Coin183" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 272 )
+[node name="Spawner41" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 458 )
 
-[node name="Coin184" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 256 )
+[node name="Spawner42" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 458 )
 
-[node name="Coin192" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -144, 256 )
+[node name="Spawner43" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 458 )
 
-[node name="Coin193" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -128, 256 )
+[node name="Spawner44" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 458 )
 
-[node name="Coin194" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -112, 256 )
+[node name="Spawner45" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 458 )
 
-[node name="Coin195" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -96, 272 )
+[node name="Spawner46" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 458 )
 
-[node name="Coin196" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -80, 288 )
+[node name="Spawner47" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 458 )
 
-[node name="Coin197" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -64, 304 )
+[node name="Spawner48" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 458 )
 
-[node name="Coin198" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -48, 304 )
+[node name="Spawner49" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 458 )
 
-[node name="Coin199" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -32, 304 )
+[node name="Spawner50" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 458 )
 
-[node name="Coin200" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -16, 320 )
+[node name="Spawner51" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 442 )
 
-[node name="Coin201" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 0, 336 )
+[node name="Spawner52" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 442 )
 
-[node name="Coin202" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 16, 336 )
+[node name="Spawner53" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 442 )
 
-[node name="Coin203" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 32, 336 )
+[node name="Spawner54" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 442 )
 
-[node name="Coin204" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 48, 336 )
+[node name="Spawner55" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 442 )
 
-[node name="Coin205" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 64, 336 )
+[node name="Spawner56" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 442 )
 
-[node name="Coin206" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 336 )
+[node name="Spawner57" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 442 )
 
-[node name="Coin207" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 320 )
+[node name="Spawner58" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 442 )
 
-[node name="Coin208" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 64, 304 )
+[node name="Spawner59" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 442 )
 
-[node name="Coin209" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 288 )
+[node name="Spawner60" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 442 )
 
-[node name="Coin213" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 400 )
+[node name="Spawner61" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 426 )
 
-[node name="Coin214" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 96, 384 )
+[node name="Spawner62" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 426 )
 
-[node name="Coin217" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 432 )
+[node name="Spawner63" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 426 )
 
-[node name="Coin218" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 416 )
+[node name="Spawner64" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 426 )
 
-[node name="Coin221" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 96, 464 )
+[node name="Spawner65" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 426 )
 
-[node name="Coin222" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 112, 464 )
+[node name="Spawner66" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 426 )
 
-[node name="Coin223" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 128, 464 )
+[node name="Spawner67" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 426 )
 
-[node name="Coin224" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 144, 464 )
+[node name="Spawner68" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 426 )
 
-[node name="Coin220" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 448 )
+[node name="Spawner69" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 426 )
 
-[node name="Coin215" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 96, 368 )
+[node name="Spawner70" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 426 )
 
-[node name="Coin216" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 352 )
+[node name="Spawner71" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 410 )
 
-[node name="Coin210" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 272 )
+[node name="Spawner72" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 410 )
 
-[node name="Coin211" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 256 )
+[node name="Spawner73" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 410 )
 
-[node name="Coin212" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 240 )
+[node name="Spawner74" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 410 )
 
-[node name="Coin185" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -176, 192 )
+[node name="Spawner75" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 410 )
 
-[node name="Coin226" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 208 )
+[node name="Spawner76" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 410 )
 
-[node name="Coin227" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 224 )
+[node name="Spawner77" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 410 )
 
-[node name="Coin228" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -160, 240 )
+[node name="Spawner78" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 410 )
 
-[node name="Coin229" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -336, 160 )
+[node name="Spawner79" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 410 )
 
-[node name="Coin230" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -352, 160 )
+[node name="Spawner80" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 410 )
 
-[node name="Coin186" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -192, 176 )
+[node name="Spawner81" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 234, 394 )
 
-[node name="Coin187" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -208, 160 )
+[node name="Spawner82" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 250, 394 )
 
-[node name="Coin188" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -224, 144 )
+[node name="Spawner83" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 266, 394 )
 
-[node name="Coin189" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -240, 144 )
+[node name="Spawner84" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 282, 394 )
 
-[node name="Coin190" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -256, 144 )
+[node name="Spawner85" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 298, 394 )
 
-[node name="Coin191" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( -272, 144 )
+[node name="Spawner86" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 394 )
 
-[node name="Coin54" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 160 )
+[node name="Spawner87" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 394 )
 
-[node name="Coin12" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 48 )
+[node name="Spawner88" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 394 )
 
-[node name="Coin13" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 32 )
+[node name="Spawner89" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 394 )
 
-[node name="Coin14" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 16 )
+[node name="Spawner90" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 394 )
 
-[node name="Coin15" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, 0 )
+[node name="Spawner91" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 506 )
 
-[node name="Coin16" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -16 )
+[node name="Spawner92" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 506 )
 
-[node name="Coin17" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -32 )
+[node name="Spawner93" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 506 )
 
-[node name="Coin18" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -48 )
+[node name="Spawner94" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 506 )
 
-[node name="Coin19" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -64 )
+[node name="Spawner95" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 506 )
 
-[node name="Coin20" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -80 )
+[node name="Spawner96" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 506 )
 
-[node name="Coin21" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -96 )
+[node name="Spawner97" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 506 )
 
-[node name="Coin22" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -112 )
+[node name="Spawner98" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 506 )
 
-[node name="Coin23" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -128 )
+[node name="Spawner99" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 506 )
 
-[node name="Coin24" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 96, -144 )
+[node name="Spawner100" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 506 )
 
-[node name="Coin25" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 112, -160 )
+[node name="Spawner101" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 490 )
 
-[node name="Coin26" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 112, -176 )
+[node name="Spawner102" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 490 )
 
-[node name="Coin27" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 112, -192 )
+[node name="Spawner103" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 490 )
 
-[node name="Coin28" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 96, -208 )
+[node name="Spawner104" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 490 )
 
-[node name="Coin29" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -224 )
+[node name="Spawner105" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 490 )
 
-[node name="Coin30" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -240 )
+[node name="Spawner106" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 490 )
 
-[node name="Coin31" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 80, -256 )
+[node name="Spawner107" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 490 )
 
-[node name="Coin32" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 96, -256 )
+[node name="Spawner108" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 490 )
 
-[node name="Coin33" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 112, -256 )
+[node name="Spawner109" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 490 )
 
-[node name="Coin34" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 128, -256 )
+[node name="Spawner110" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 490 )
 
-[node name="Coin35" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 144, -256 )
+[node name="Spawner111" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 474 )
 
-[node name="Coin36" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 160, -256 )
+[node name="Spawner112" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 474 )
 
-[node name="Coin37" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 176, -256 )
+[node name="Spawner113" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 474 )
 
-[node name="Coin38" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 192, -256 )
+[node name="Spawner114" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 474 )
 
-[node name="Coin44" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 384 )
+[node name="Spawner115" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 474 )
 
-[node name="Coin57" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 384 )
+[node name="Spawner116" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 474 )
 
-[node name="Coin58" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 384 )
+[node name="Spawner117" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 474 )
 
-[node name="Coin59" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 384 )
+[node name="Spawner118" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 474 )
 
-[node name="Coin60" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 384 )
+[node name="Spawner119" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 474 )
 
-[node name="Coin61" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 384 )
+[node name="Spawner120" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 474 )
 
-[node name="Coin62" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 384 )
+[node name="Spawner121" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 458 )
 
-[node name="Coin63" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 384 )
+[node name="Spawner122" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 458 )
 
-[node name="Coin64" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 384 )
+[node name="Spawner123" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 458 )
 
-[node name="Coin65" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 384 )
+[node name="Spawner124" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 458 )
 
-[node name="Coin66" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 384 )
+[node name="Spawner125" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 458 )
 
-[node name="Coin45" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 400 )
+[node name="Spawner126" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 458 )
 
-[node name="Coin67" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 400 )
+[node name="Spawner127" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 458 )
 
-[node name="Coin68" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 400 )
+[node name="Spawner128" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 458 )
 
-[node name="Coin69" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 400 )
+[node name="Spawner129" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 458 )
 
-[node name="Coin70" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 400 )
+[node name="Spawner130" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 458 )
 
-[node name="Coin71" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 400 )
+[node name="Spawner131" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 442 )
 
-[node name="Coin72" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 400 )
+[node name="Spawner132" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 442 )
 
-[node name="Coin73" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 400 )
+[node name="Spawner133" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 442 )
 
-[node name="Coin74" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 400 )
+[node name="Spawner134" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 442 )
 
-[node name="Coin75" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 400 )
+[node name="Spawner135" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 442 )
 
-[node name="Coin76" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 400 )
+[node name="Spawner136" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 442 )
 
-[node name="Coin46" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 416 )
+[node name="Spawner137" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 442 )
 
-[node name="Coin77" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 416 )
+[node name="Spawner138" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 442 )
 
-[node name="Coin78" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 416 )
+[node name="Spawner139" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 442 )
 
-[node name="Coin79" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 416 )
+[node name="Spawner140" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 442 )
 
-[node name="Coin80" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 416 )
+[node name="Spawner141" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 426 )
 
-[node name="Coin81" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 416 )
+[node name="Spawner142" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 426 )
 
-[node name="Coin82" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 416 )
+[node name="Spawner143" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 426 )
 
-[node name="Coin83" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 416 )
+[node name="Spawner144" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 426 )
 
-[node name="Coin84" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 416 )
+[node name="Spawner145" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 426 )
 
-[node name="Coin85" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 416 )
+[node name="Spawner146" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 426 )
 
-[node name="Coin86" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 416 )
+[node name="Spawner147" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 426 )
 
-[node name="Coin47" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 432 )
+[node name="Spawner148" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 426 )
 
-[node name="Coin87" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 432 )
+[node name="Spawner149" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 426 )
 
-[node name="Coin88" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 432 )
+[node name="Spawner150" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 426 )
 
-[node name="Coin89" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 432 )
+[node name="Spawner151" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 410 )
 
-[node name="Coin90" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 432 )
+[node name="Spawner152" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 410 )
 
-[node name="Coin91" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 432 )
+[node name="Spawner153" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 410 )
 
-[node name="Coin92" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 432 )
+[node name="Spawner154" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 410 )
 
-[node name="Coin93" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 432 )
+[node name="Spawner155" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 410 )
 
-[node name="Coin94" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 432 )
+[node name="Spawner156" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 410 )
 
-[node name="Coin95" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 432 )
+[node name="Spawner157" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 410 )
 
-[node name="Coin96" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 432 )
+[node name="Spawner158" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 410 )
 
-[node name="Coin48" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 448 )
+[node name="Spawner159" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 410 )
 
-[node name="Coin97" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 448 )
+[node name="Spawner160" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 410 )
 
-[node name="Coin98" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 448 )
+[node name="Spawner161" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 394 )
 
-[node name="Coin99" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 448 )
+[node name="Spawner162" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 394 )
 
-[node name="Coin100" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 448 )
+[node name="Spawner163" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 394 )
 
-[node name="Coin101" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 448 )
+[node name="Spawner164" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 394 )
 
-[node name="Coin102" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 448 )
+[node name="Spawner165" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 394 )
 
-[node name="Coin103" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 448 )
+[node name="Spawner166" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 394 )
 
-[node name="Coin104" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 448 )
+[node name="Spawner167" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 394 )
 
-[node name="Coin105" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 448 )
+[node name="Spawner168" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 394 )
 
-[node name="Coin106" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 448 )
+[node name="Spawner169" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 394 )
 
-[node name="Coin49" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 464 )
+[node name="Spawner170" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 394 )
 
-[node name="Coin107" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 464 )
+[node name="Spawner171" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 10, 378 )
 
-[node name="Coin108" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 464 )
+[node name="Spawner172" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 26, 378 )
 
-[node name="Coin109" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 464 )
+[node name="Spawner173" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 42, 378 )
 
-[node name="Coin110" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 464 )
+[node name="Spawner174" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 58, 378 )
 
-[node name="Coin111" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 464 )
+[node name="Spawner175" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 74, 378 )
 
-[node name="Coin112" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 464 )
+[node name="Spawner176" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 106, 378 )
 
-[node name="Coin113" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 464 )
+[node name="Spawner177" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 122, 378 )
 
-[node name="Coin114" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 464 )
+[node name="Spawner178" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 138, 378 )
 
-[node name="Coin115" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 464 )
+[node name="Spawner179" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 154, 378 )
 
-[node name="Coin116" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 464 )
+[node name="Spawner180" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 90, 378 )
 
-[node name="Coin50" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 480 )
+[node name="Spawner181" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 506 )
 
-[node name="Coin117" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 480 )
+[node name="Spawner182" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 506 )
 
-[node name="Coin118" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 480 )
+[node name="Spawner183" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 506 )
 
-[node name="Coin119" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 480 )
+[node name="Spawner184" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 506 )
 
-[node name="Coin120" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 480 )
+[node name="Spawner185" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 506 )
 
-[node name="Coin121" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 480 )
+[node name="Spawner186" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 506 )
 
-[node name="Coin122" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 480 )
+[node name="Spawner187" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 506 )
 
-[node name="Coin123" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 480 )
+[node name="Spawner188" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 506 )
 
-[node name="Coin124" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 480 )
+[node name="Spawner189" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 506 )
 
-[node name="Coin125" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 480 )
+[node name="Spawner190" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 506 )
 
-[node name="Coin126" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 480 )
+[node name="Spawner191" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 490 )
 
-[node name="Coin51" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 496 )
+[node name="Spawner192" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 490 )
 
-[node name="Coin127" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 496 )
+[node name="Spawner193" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 490 )
 
-[node name="Coin128" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 496 )
+[node name="Spawner194" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 490 )
 
-[node name="Coin129" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 496 )
+[node name="Spawner195" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 490 )
 
-[node name="Coin130" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 496 )
+[node name="Spawner196" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 490 )
 
-[node name="Coin131" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 496 )
+[node name="Spawner197" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 490 )
 
-[node name="Coin132" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 496 )
+[node name="Spawner198" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 490 )
 
-[node name="Coin133" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 496 )
+[node name="Spawner199" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 490 )
 
-[node name="Coin134" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 496 )
+[node name="Spawner200" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 490 )
 
-[node name="Coin135" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 496 )
+[node name="Spawner201" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 474 )
 
-[node name="Coin136" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 496 )
+[node name="Spawner202" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 474 )
 
-[node name="Coin52" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 512 )
+[node name="Spawner203" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 474 )
 
-[node name="Coin137" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 512 )
+[node name="Spawner204" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 474 )
 
-[node name="Coin138" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 512 )
+[node name="Spawner205" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 474 )
 
-[node name="Coin139" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 512 )
+[node name="Spawner206" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 474 )
 
-[node name="Coin140" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 512 )
+[node name="Spawner207" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 474 )
 
-[node name="Coin141" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 512 )
+[node name="Spawner208" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 474 )
 
-[node name="Coin142" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 512 )
+[node name="Spawner209" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 474 )
 
-[node name="Coin143" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 512 )
+[node name="Spawner210" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 474 )
 
-[node name="Coin144" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 512 )
+[node name="Spawner211" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 458 )
 
-[node name="Coin145" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 512 )
+[node name="Spawner212" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 458 )
 
-[node name="Coin146" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 512 )
+[node name="Spawner213" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 458 )
 
-[node name="Coin53" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 240, 528 )
+[node name="Spawner214" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 458 )
 
-[node name="Coin147" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 256, 528 )
+[node name="Spawner215" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 458 )
 
-[node name="Coin148" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 272, 528 )
+[node name="Spawner216" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 458 )
 
-[node name="Coin149" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 288, 528 )
+[node name="Spawner217" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 458 )
 
-[node name="Coin150" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 304, 528 )
+[node name="Spawner218" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 458 )
 
-[node name="Coin151" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 320, 528 )
+[node name="Spawner219" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 458 )
 
-[node name="Coin152" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 336, 528 )
+[node name="Spawner220" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 458 )
 
-[node name="Coin153" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 352, 528 )
+[node name="Spawner221" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 442 )
 
-[node name="Coin154" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 368, 528 )
+[node name="Spawner222" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 442 )
 
-[node name="Coin155" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 528 )
+[node name="Spawner223" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 442 )
 
-[node name="Coin156" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 384, 528 )
+[node name="Spawner224" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 442 )
+
+[node name="Spawner225" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 442 )
+
+[node name="Spawner226" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 442 )
+
+[node name="Spawner227" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 442 )
+
+[node name="Spawner228" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 442 )
+
+[node name="Spawner229" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 442 )
+
+[node name="Spawner230" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 442 )
+
+[node name="Spawner231" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 426 )
+
+[node name="Spawner232" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 426 )
+
+[node name="Spawner233" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 426 )
+
+[node name="Spawner234" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 426 )
+
+[node name="Spawner235" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 426 )
+
+[node name="Spawner236" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 426 )
+
+[node name="Spawner237" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 426 )
+
+[node name="Spawner238" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 426 )
+
+[node name="Spawner239" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 426 )
+
+[node name="Spawner240" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 426 )
+
+[node name="Spawner241" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 410 )
+
+[node name="Spawner242" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 410 )
+
+[node name="Spawner243" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 410 )
+
+[node name="Spawner244" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 410 )
+
+[node name="Spawner245" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 410 )
+
+[node name="Spawner246" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 410 )
+
+[node name="Spawner247" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 410 )
+
+[node name="Spawner248" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 410 )
+
+[node name="Spawner249" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 410 )
+
+[node name="Spawner250" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 410 )
+
+[node name="Spawner251" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 394 )
+
+[node name="Spawner252" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 394 )
+
+[node name="Spawner253" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 394 )
+
+[node name="Spawner254" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 394 )
+
+[node name="Spawner255" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 394 )
+
+[node name="Spawner256" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 394 )
+
+[node name="Spawner257" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 394 )
+
+[node name="Spawner258" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 394 )
+
+[node name="Spawner259" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 394 )
+
+[node name="Spawner260" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 394 )
+
+[node name="Spawner261" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 378 )
+
+[node name="Spawner262" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 378 )
+
+[node name="Spawner263" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 378 )
+
+[node name="Spawner264" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 378 )
+
+[node name="Spawner265" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 378 )
+
+[node name="Spawner266" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 378 )
+
+[node name="Spawner267" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 378 )
+
+[node name="Spawner268" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 378 )
+
+[node name="Spawner269" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 378 )
+
+[node name="Spawner270" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 378 )
+
+[node name="Spawner271" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 346 )
+
+[node name="Spawner272" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 346 )
+
+[node name="Spawner273" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 346 )
+
+[node name="Spawner274" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 346 )
+
+[node name="Spawner275" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 346 )
+
+[node name="Spawner276" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 346 )
+
+[node name="Spawner277" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 346 )
+
+[node name="Spawner278" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 346 )
+
+[node name="Spawner279" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 346 )
+
+[node name="Spawner280" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 346 )
+
+[node name="Spawner281" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 330 )
+
+[node name="Spawner282" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 330 )
+
+[node name="Spawner283" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 330 )
+
+[node name="Spawner284" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 330 )
+
+[node name="Spawner285" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 330 )
+
+[node name="Spawner286" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 330 )
+
+[node name="Spawner287" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 330 )
+
+[node name="Spawner288" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 330 )
+
+[node name="Spawner289" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 330 )
+
+[node name="Spawner290" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 330 )
+
+[node name="Spawner291" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 314 )
+
+[node name="Spawner292" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 314 )
+
+[node name="Spawner293" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 314 )
+
+[node name="Spawner294" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 314 )
+
+[node name="Spawner295" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 314 )
+
+[node name="Spawner296" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 314 )
+
+[node name="Spawner297" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 314 )
+
+[node name="Spawner298" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 314 )
+
+[node name="Spawner299" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 314 )
+
+[node name="Spawner300" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 314 )
+
+[node name="Spawner301" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 298 )
+
+[node name="Spawner302" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 298 )
+
+[node name="Spawner303" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 298 )
+
+[node name="Spawner304" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 298 )
+
+[node name="Spawner305" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 298 )
+
+[node name="Spawner306" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 298 )
+
+[node name="Spawner307" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 298 )
+
+[node name="Spawner308" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 298 )
+
+[node name="Spawner309" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 298 )
+
+[node name="Spawner310" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 298 )
+
+[node name="Spawner311" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 282 )
+
+[node name="Spawner312" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 282 )
+
+[node name="Spawner313" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 282 )
+
+[node name="Spawner314" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 282 )
+
+[node name="Spawner315" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 282 )
+
+[node name="Spawner316" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 282 )
+
+[node name="Spawner317" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 282 )
+
+[node name="Spawner318" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 282 )
+
+[node name="Spawner319" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 282 )
+
+[node name="Spawner320" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 282 )
+
+[node name="Spawner321" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 266 )
+
+[node name="Spawner322" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 266 )
+
+[node name="Spawner323" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 266 )
+
+[node name="Spawner324" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 266 )
+
+[node name="Spawner325" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 266 )
+
+[node name="Spawner326" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 266 )
+
+[node name="Spawner327" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 266 )
+
+[node name="Spawner328" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 266 )
+
+[node name="Spawner329" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 266 )
+
+[node name="Spawner330" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 266 )
+
+[node name="Spawner331" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 250 )
+
+[node name="Spawner332" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 250 )
+
+[node name="Spawner333" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 250 )
+
+[node name="Spawner334" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 250 )
+
+[node name="Spawner335" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 250 )
+
+[node name="Spawner336" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 250 )
+
+[node name="Spawner337" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 250 )
+
+[node name="Spawner338" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 250 )
+
+[node name="Spawner339" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 250 )
+
+[node name="Spawner340" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 250 )
+
+[node name="Spawner341" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 234 )
+
+[node name="Spawner342" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 234 )
+
+[node name="Spawner343" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 234 )
+
+[node name="Spawner344" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 234 )
+
+[node name="Spawner345" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 234 )
+
+[node name="Spawner346" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 234 )
+
+[node name="Spawner347" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 234 )
+
+[node name="Spawner348" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 234 )
+
+[node name="Spawner349" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 234 )
+
+[node name="Spawner350" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 234 )
+
+[node name="Spawner351" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 218 )
+
+[node name="Spawner352" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 218 )
+
+[node name="Spawner353" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 218 )
+
+[node name="Spawner354" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 218 )
+
+[node name="Spawner355" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 218 )
+
+[node name="Spawner356" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 218 )
+
+[node name="Spawner357" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -86, 218 )
+
+[node name="Spawner358" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -70, 218 )
+
+[node name="Spawner359" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -54, 218 )
+
+[node name="Spawner360" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 218 )
+
+[node name="Spawner361" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 298 )
+
+[node name="Spawner362" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 298 )
+
+[node name="Spawner363" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 298 )
+
+[node name="Spawner364" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 298 )
+
+[node name="Spawner365" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 298 )
+
+[node name="Spawner366" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 298 )
+
+[node name="Spawner367" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 298 )
+
+[node name="Spawner368" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 298 )
+
+[node name="Spawner369" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 298 )
+
+[node name="Spawner370" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 298 )
+
+[node name="Spawner371" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 282 )
+
+[node name="Spawner372" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 282 )
+
+[node name="Spawner373" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 282 )
+
+[node name="Spawner374" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 282 )
+
+[node name="Spawner375" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 282 )
+
+[node name="Spawner376" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 282 )
+
+[node name="Spawner377" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 282 )
+
+[node name="Spawner378" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 282 )
+
+[node name="Spawner379" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 282 )
+
+[node name="Spawner380" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 282 )
+
+[node name="Spawner381" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 266 )
+
+[node name="Spawner382" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 266 )
+
+[node name="Spawner383" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 266 )
+
+[node name="Spawner384" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 266 )
+
+[node name="Spawner385" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 266 )
+
+[node name="Spawner386" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 266 )
+
+[node name="Spawner387" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 266 )
+
+[node name="Spawner388" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 266 )
+
+[node name="Spawner389" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 266 )
+
+[node name="Spawner390" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 266 )
+
+[node name="Spawner391" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 250 )
+
+[node name="Spawner392" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 250 )
+
+[node name="Spawner393" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 250 )
+
+[node name="Spawner394" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 250 )
+
+[node name="Spawner395" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 250 )
+
+[node name="Spawner396" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 250 )
+
+[node name="Spawner397" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 250 )
+
+[node name="Spawner398" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 250 )
+
+[node name="Spawner399" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 250 )
+
+[node name="Spawner400" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 250 )
+
+[node name="Spawner401" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 234 )
+
+[node name="Spawner402" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 234 )
+
+[node name="Spawner403" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 234 )
+
+[node name="Spawner404" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 234 )
+
+[node name="Spawner405" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 234 )
+
+[node name="Spawner406" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 234 )
+
+[node name="Spawner407" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 234 )
+
+[node name="Spawner408" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 234 )
+
+[node name="Spawner409" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 234 )
+
+[node name="Spawner410" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 234 )
+
+[node name="Spawner411" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 218 )
+
+[node name="Spawner412" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 218 )
+
+[node name="Spawner413" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 218 )
+
+[node name="Spawner414" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 218 )
+
+[node name="Spawner415" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 218 )
+
+[node name="Spawner416" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 218 )
+
+[node name="Spawner417" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 218 )
+
+[node name="Spawner418" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 218 )
+
+[node name="Spawner419" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 218 )
+
+[node name="Spawner420" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 218 )
+
+[node name="Spawner421" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 202 )
+
+[node name="Spawner422" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 202 )
+
+[node name="Spawner423" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 202 )
+
+[node name="Spawner424" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 202 )
+
+[node name="Spawner425" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 202 )
+
+[node name="Spawner426" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 202 )
+
+[node name="Spawner427" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 202 )
+
+[node name="Spawner428" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 202 )
+
+[node name="Spawner429" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 202 )
+
+[node name="Spawner430" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 202 )
+
+[node name="Spawner431" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 186 )
+
+[node name="Spawner432" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 186 )
+
+[node name="Spawner433" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 186 )
+
+[node name="Spawner434" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 186 )
+
+[node name="Spawner435" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 186 )
+
+[node name="Spawner436" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 186 )
+
+[node name="Spawner437" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 186 )
+
+[node name="Spawner438" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 186 )
+
+[node name="Spawner439" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 186 )
+
+[node name="Spawner440" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 186 )
+
+[node name="Spawner441" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 170 )
+
+[node name="Spawner442" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 170 )
+
+[node name="Spawner443" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 170 )
+
+[node name="Spawner444" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 170 )
+
+[node name="Spawner445" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 170 )
+
+[node name="Spawner446" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 170 )
+
+[node name="Spawner447" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 170 )
+
+[node name="Spawner448" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 170 )
+
+[node name="Spawner449" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 170 )
+
+[node name="Spawner450" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 170 )
+
+[node name="Spawner451" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 138 )
+
+[node name="Spawner452" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 138 )
+
+[node name="Spawner453" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 138 )
+
+[node name="Spawner454" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 138 )
+
+[node name="Spawner455" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 138 )
+
+[node name="Spawner456" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 138 )
+
+[node name="Spawner457" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 138 )
+
+[node name="Spawner458" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 138 )
+
+[node name="Spawner459" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 138 )
+
+[node name="Spawner460" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 138 )
+
+[node name="Spawner461" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 122 )
+
+[node name="Spawner462" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 122 )
+
+[node name="Spawner463" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 122 )
+
+[node name="Spawner464" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 122 )
+
+[node name="Spawner465" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 122 )
+
+[node name="Spawner466" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 122 )
+
+[node name="Spawner467" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 122 )
+
+[node name="Spawner468" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 122 )
+
+[node name="Spawner469" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 122 )
+
+[node name="Spawner470" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 122 )
+
+[node name="Spawner471" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 106 )
+
+[node name="Spawner472" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 106 )
+
+[node name="Spawner473" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 106 )
+
+[node name="Spawner474" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 106 )
+
+[node name="Spawner475" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 106 )
+
+[node name="Spawner476" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 106 )
+
+[node name="Spawner477" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 106 )
+
+[node name="Spawner478" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 106 )
+
+[node name="Spawner479" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 106 )
+
+[node name="Spawner480" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 106 )
+
+[node name="Spawner481" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 90 )
+
+[node name="Spawner482" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 90 )
+
+[node name="Spawner483" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 90 )
+
+[node name="Spawner484" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 90 )
+
+[node name="Spawner485" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 90 )
+
+[node name="Spawner486" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 90 )
+
+[node name="Spawner487" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 90 )
+
+[node name="Spawner488" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 90 )
+
+[node name="Spawner489" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 90 )
+
+[node name="Spawner490" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 90 )
+
+[node name="Spawner491" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 74 )
+
+[node name="Spawner492" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 74 )
+
+[node name="Spawner493" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 74 )
+
+[node name="Spawner494" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 74 )
+
+[node name="Spawner495" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 74 )
+
+[node name="Spawner496" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 74 )
+
+[node name="Spawner497" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 74 )
+
+[node name="Spawner498" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 74 )
+
+[node name="Spawner499" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 74 )
+
+[node name="Spawner500" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 74 )
+
+[node name="Spawner501" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 58 )
+
+[node name="Spawner502" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 58 )
+
+[node name="Spawner503" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 58 )
+
+[node name="Spawner504" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 58 )
+
+[node name="Spawner505" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 58 )
+
+[node name="Spawner506" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 58 )
+
+[node name="Spawner507" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 58 )
+
+[node name="Spawner508" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 58 )
+
+[node name="Spawner509" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 58 )
+
+[node name="Spawner510" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 58 )
+
+[node name="Spawner511" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 42 )
+
+[node name="Spawner512" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 42 )
+
+[node name="Spawner513" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 42 )
+
+[node name="Spawner514" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 42 )
+
+[node name="Spawner515" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 42 )
+
+[node name="Spawner516" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 42 )
+
+[node name="Spawner517" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 42 )
+
+[node name="Spawner518" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 42 )
+
+[node name="Spawner519" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 42 )
+
+[node name="Spawner520" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 42 )
+
+[node name="Spawner521" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 26 )
+
+[node name="Spawner522" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 26 )
+
+[node name="Spawner523" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 26 )
+
+[node name="Spawner524" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 26 )
+
+[node name="Spawner525" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 26 )
+
+[node name="Spawner526" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 26 )
+
+[node name="Spawner527" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 26 )
+
+[node name="Spawner528" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 26 )
+
+[node name="Spawner529" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 26 )
+
+[node name="Spawner530" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 26 )
+
+[node name="Spawner531" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 314, 10 )
+
+[node name="Spawner532" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 330, 10 )
+
+[node name="Spawner533" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 346, 10 )
+
+[node name="Spawner534" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 362, 10 )
+
+[node name="Spawner535" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 378, 10 )
+
+[node name="Spawner536" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 410, 10 )
+
+[node name="Spawner537" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 426, 10 )
+
+[node name="Spawner538" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 442, 10 )
+
+[node name="Spawner539" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 458, 10 )
+
+[node name="Spawner540" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 394, 10 )
+
+[node name="Spawner541" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 106 )
+
+[node name="Spawner542" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 106 )
+
+[node name="Spawner543" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 106 )
+
+[node name="Spawner544" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 106 )
+
+[node name="Spawner545" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 106 )
+
+[node name="Spawner546" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 106 )
+
+[node name="Spawner547" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 106 )
+
+[node name="Spawner548" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 106 )
+
+[node name="Spawner549" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 106 )
+
+[node name="Spawner550" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 106 )
+
+[node name="Spawner551" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 90 )
+
+[node name="Spawner552" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 90 )
+
+[node name="Spawner553" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 90 )
+
+[node name="Spawner554" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 90 )
+
+[node name="Spawner555" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 90 )
+
+[node name="Spawner556" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 90 )
+
+[node name="Spawner557" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 90 )
+
+[node name="Spawner558" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 90 )
+
+[node name="Spawner559" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 90 )
+
+[node name="Spawner560" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 90 )
+
+[node name="Spawner561" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 74 )
+
+[node name="Spawner562" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 74 )
+
+[node name="Spawner563" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 74 )
+
+[node name="Spawner564" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 74 )
+
+[node name="Spawner565" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 74 )
+
+[node name="Spawner566" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 74 )
+
+[node name="Spawner567" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 74 )
+
+[node name="Spawner568" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 74 )
+
+[node name="Spawner569" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 74 )
+
+[node name="Spawner570" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 74 )
+
+[node name="Spawner571" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 58 )
+
+[node name="Spawner572" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 58 )
+
+[node name="Spawner573" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 58 )
+
+[node name="Spawner574" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 58 )
+
+[node name="Spawner575" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 58 )
+
+[node name="Spawner576" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 58 )
+
+[node name="Spawner577" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 58 )
+
+[node name="Spawner578" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 58 )
+
+[node name="Spawner579" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 58 )
+
+[node name="Spawner580" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 58 )
+
+[node name="Spawner581" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 42 )
+
+[node name="Spawner582" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 42 )
+
+[node name="Spawner583" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 42 )
+
+[node name="Spawner584" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 42 )
+
+[node name="Spawner585" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 42 )
+
+[node name="Spawner586" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 42 )
+
+[node name="Spawner587" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 42 )
+
+[node name="Spawner588" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 42 )
+
+[node name="Spawner589" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 42 )
+
+[node name="Spawner590" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 42 )
+
+[node name="Spawner591" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 26 )
+
+[node name="Spawner592" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 26 )
+
+[node name="Spawner593" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 26 )
+
+[node name="Spawner594" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 26 )
+
+[node name="Spawner595" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 26 )
+
+[node name="Spawner596" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 26 )
+
+[node name="Spawner597" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 26 )
+
+[node name="Spawner598" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 26 )
+
+[node name="Spawner599" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 26 )
+
+[node name="Spawner600" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 26 )
+
+[node name="Spawner601" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, 10 )
+
+[node name="Spawner602" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, 10 )
+
+[node name="Spawner603" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, 10 )
+
+[node name="Spawner604" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, 10 )
+
+[node name="Spawner605" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, 10 )
+
+[node name="Spawner606" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, 10 )
+
+[node name="Spawner607" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, 10 )
+
+[node name="Spawner608" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, 10 )
+
+[node name="Spawner609" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, 10 )
+
+[node name="Spawner610" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, 10 )
+
+[node name="Spawner611" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, -6 )
+
+[node name="Spawner612" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, -6 )
+
+[node name="Spawner613" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, -6 )
+
+[node name="Spawner614" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, -6 )
+
+[node name="Spawner615" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, -6 )
+
+[node name="Spawner616" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, -6 )
+
+[node name="Spawner617" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, -6 )
+
+[node name="Spawner618" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, -6 )
+
+[node name="Spawner619" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, -6 )
+
+[node name="Spawner620" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, -6 )
+
+[node name="Spawner621" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -246, -22 )
+
+[node name="Spawner622" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -230, -22 )
+
+[node name="Spawner623" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -214, -22 )
+
+[node name="Spawner624" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -198, -22 )
+
+[node name="Spawner625" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -182, -22 )
+
+[node name="Spawner626" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -150, -22 )
+
+[node name="Spawner627" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -134, -22 )
+
+[node name="Spawner628" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -118, -22 )
+
+[node name="Spawner629" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -102, -22 )
+
+[node name="Spawner630" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( -166, -22 )
 
 [node name="Hazards" type="Node2D" parent="."]
 
