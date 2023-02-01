@@ -1,13 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Environment/Coin/coin.png" type="Texture" id=1]
 [ext_resource path="res://Environment/Coin/Coin.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 6.08276
+resource_local_to_scene = true
+radius = 4.0
 
-[node name="Coin" type="Area2D"]
+[sub_resource type="CircleShape2D" id=2]
+radius = 6.5
+
+[node name="Coin" type="KinematicBody2D"]
 scale = Vector2( 0.7, 1 )
+collision_layer = 0
+collision_mask = 4
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -16,4 +22,12 @@ shape = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 
-[connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]
+[node name="Collection" type="Area2D" parent="."]
+collision_layer = 15
+collision_mask = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collection"]
+shape = SubResource( 2 )
+
+[connection signal="area_entered" from="Collection" to="." method="_on_Collection_area_entered"]
+[connection signal="body_entered" from="Collection" to="." method="_on_Collection_body_entered"]

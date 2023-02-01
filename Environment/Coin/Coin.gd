@@ -1,4 +1,4 @@
-extends Area2D
+extends KinematicBody2D
 
 onready var player
 var follow_speed = 100
@@ -20,7 +20,8 @@ func _physics_process(delta: float) -> void:
 	follow_player(delta)
 
 
-func _on_Coin_body_entered(body: Node) -> void:
+
+func _on_Collection_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
 		$Sprite.modulate = Color(100,100,100)
 		$Sprite.scale = Vector2(1.2, 1.2)
@@ -33,6 +34,9 @@ func _on_Coin_body_entered(body: Node) -> void:
 		queue_free()
 
 
+
+
+
 func trigger_following_player():
 	if player:
 		if global_position.distance_to(player.position) <= follow_trigger_distance:
@@ -42,7 +46,7 @@ func trigger_following_player():
 
 func follow_player(delta):
 	if following_player:
-		global_position = global_position.move_toward(player.position, follow_speed * delta)
+		move_and_slide(Vector2(follow_speed, 0).rotated(get_angle_to(player.position)))
 
 func spawn_particles():
 	var inst = death_particles.instance()
@@ -69,3 +73,9 @@ func stop_spawning():
 
 func _receive_player_node(node):
 	player = node
+
+
+
+
+
+
