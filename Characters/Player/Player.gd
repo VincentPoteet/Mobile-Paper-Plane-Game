@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
 
-func _process(delta: float) -> void:
-	Signalbus.emit_signal("send_player_node", self)
+func _ready() -> void:
+	#Signalbus.emit_signal("send_player_node", self)
+	Signalbus.player = self

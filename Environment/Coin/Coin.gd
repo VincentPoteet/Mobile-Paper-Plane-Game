@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-onready var player
+onready var player = null
 var follow_speed = 100
 var following_player = false
 var follow_trigger_distance = 30
@@ -12,12 +12,13 @@ var time_freeze_scale = 0.7
 
 
 func _ready() -> void:
-	Signalbus.connect("send_player_node", self, "_receive_player_node")
-
+	player = null
 
 func _physics_process(delta: float) -> void:
 	trigger_following_player()
 	follow_player(delta)
+	if not player:
+		player = Signalbus.player
 
 
 
@@ -38,7 +39,7 @@ func _on_Collection_body_entered(body: Node) -> void:
 
 
 func trigger_following_player():
-	if player:
+	if player != null:
 		if global_position.distance_to(player.position) <= follow_trigger_distance:
 			following_player = true
 		else:
